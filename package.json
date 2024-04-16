@@ -1,0 +1,22 @@
+{
+  "name": "pda-verify-challenge",
+  "version": "1.0.0",
+  "description": "Determining whether or not each word is accepted by the PDA.",
+  "main": "bin/app",
+  "repository": "https://github.com/GiuseppeDiniz/pda-verify-challenge",
+  "author": "Giuseppe Diniz",
+  "license": "MIT",
+  "scripts": {
+    "build": "make",
+    "start": "make run",
+    "commit": "git add . && cz && git push"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
