@@ -1,0 +1,16 @@
+2 7
+0 a Z AZ 0
+0 b Z BZ 0
+0 a B & 0
+0 b A & 0
+0 a A AA 0
+0 b B BB 0
+0 & Z Z 1
+1
+1
+aabb
+abb
+abba
+aabbbbaaab
+aabbbbabab
+*

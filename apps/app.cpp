@@ -1,8 +1,25 @@
 #include <iostream>
+#include <fstream>
+#include <string>
 
-using namespace std;
+int main(int argc, char const *argv[])
+{
+    std::ifstream file(argv[1]);
+    std::string line;
 
-int main() {
-    cout << "Olá, mundo!" << endl;
+    std::cout << argc << std::endl;
+
+    if(file.is_open())
+    {
+        while (getline(file,line)) 
+        {
+            std::cout << line << std::endl;
+        }
+        file.close();        
+    } else
+    {
+        std::cout << "Error opening the file." << std::endl;
+    }  
+
     return 0;
 }

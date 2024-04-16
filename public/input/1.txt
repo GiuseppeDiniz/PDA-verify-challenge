@@ -1,0 +1,17 @@
+3 4
+0 a & A 0
+0 & & & 1
+1 b A & 1
+1 & Z Z 2
+1
+2
+ab
+aabb
+aabba
+abb
+aab
+aaabbb
+aaaaabbbb
+aaaaabbbbb
+aaaaabbbbbb
+*

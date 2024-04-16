@@ -4,6 +4,7 @@ INCLUDE = ./include
 LIB = ./lib
 OBJ = ./obj
 SRC = ./src
+PUBLIC = ./public
 
 FLAGS = -O3 -Wall
 LIBS = -lm -led -L $(LIB)
@@ -25,7 +26,7 @@ $(BIN)/%: $(APPS)/%.cpp
 	g++ $(FLAGS) $< $(LIBS) -I $(INCLUDE) -o $@
 
 run:
-	$(BIN)/app
+	$(BIN)/app $(PUBLIC)/input/1.txt
 
 clean:
 	rm -rf $(BIN)/* $(LIB)/* $(OBJ)/*
