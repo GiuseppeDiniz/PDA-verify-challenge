@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "make",
-    "start": "make run",
+    "start": "make && make run",
     "commit": "git add . && cz && git push"
   },
   "devDependencies": {

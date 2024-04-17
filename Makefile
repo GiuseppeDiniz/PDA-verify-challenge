@@ -12,7 +12,7 @@ LIBS = -lm -led -L $(LIB)
 all: libed app
 
 libed: \
-	$(OBJ)/stack.o 
+	$(OBJ)/PDA.o 
 	ar -rcs $(LIB)/libed.a $(OBJ)/*.o
 
 
