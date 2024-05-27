@@ -25,9 +25,9 @@ class Transition {
 public:
     State* from;
     State* to;
-    Rule rule_transition;
+    Rule transition_rule;
 
-    Transition(State* from, State* to, Rule rule_transition) : from(from), to(to), rule_transition(rule_transition) {}
+    Transition(State* from, State* to, Rule transition_rule) : from(from), to(to), transition_rule(transition_rule) {}
 };
 
 class Automaton {
@@ -40,7 +40,7 @@ public:
     Automaton();
     ~Automaton();
     State* createState(bool isTerminal);
-    void addTransition(State* from, State* to, Rule rule_transition);
+    void addTransition(State* from, State* to, Rule transition_rule);
     void printTransitions();
     bool isAccepted(std::string input);
 };

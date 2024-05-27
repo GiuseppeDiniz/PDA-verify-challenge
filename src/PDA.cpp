@@ -1,5 +1,6 @@
 #include "PDA.h"
 #include <iostream>
+#include <string>
 
 Automaton::Automaton() {}
 
@@ -14,21 +15,12 @@ State* Automaton::createState(bool isTerminal) {
     return newState;
 }
 
-void Automaton::addTransition(State* from, State* to, Rule rule_transition) {
-    transitions.push_back(Transition(from, to, rule_transition));
+void Automaton::addTransition(State* from, State* to, Rule transition_rule) {
+    transitions.push_back(Transition(from, to, transition_rule));
 }
 
 void Automaton::printTransitions() {
     for (const auto& transition : transitions) {
-        std::cout << "From State " << transition.from->id << " to State " << transition.to->id << " with rule: " << transition.rule_transition.input << ", " << transition.rule_transition.pop << ", " << transition.rule_transition.push << std::endl;
+        std::cout << "From State " << transition.from->id << " to State " << transition.to->id << " with rule: " << transition.transition_rule.input << ", " << transition.transition_rule.pop << ", " << transition.transition_rule.push << std::endl;
     }
-}
-
-bool Automaton::isAccepted(std::string input) {
-    // Em construcao
-    State* currentState = states.front();
-    for (char symbol : input) {
-        
-    }
-    return currentState->isTerminal;
 }
