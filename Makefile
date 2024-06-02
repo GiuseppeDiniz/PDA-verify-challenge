@@ -26,7 +26,7 @@ $(BIN)/%: $(APPS)/%.cpp
 	g++ $(FLAGS) $< $(LIBS) -I $(INCLUDE) -o $@
 
 run:
-	$(BIN)/app $(PUBLIC)/input/1.txt
+	$(BIN)/app
 
 clean:
 	rm -rf $(BIN)/* $(LIB)/* $(OBJ)/*
